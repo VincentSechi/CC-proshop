@@ -88,7 +88,6 @@ const products = [
   },
 ];
 
-/* mongoose.connect('mongodb+srv://vincent:azertyuiop@redgi.poqfatm.mongodb.net/proshop?retryWrites=true&w=majority&appName=redgi') */
 mongoose.connect('mongodb://localhost:27017/proshop', {
   useNewUrlParser: true,
   useUnifiedTopology: true,

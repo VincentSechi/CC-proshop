@@ -4,8 +4,7 @@ require('dotenv').config(); // si tu utilises un .env pour MONGO_URI
 
 async function createAdmin() {
   try {
-    await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/proshop');
-    /* await mongoose.connect('mongodb+srv://vincent:azertyuiop@redgi.poqfatm.mongodb.net/proshop?retryWrites=true&w=majority&appName=redgi') */
+    await mongoose.connect('mongodb://localhost:27017/proshop');
     const existingAdmin = await User.findOne({ email: 'admin@admin.com' });
     if (existingAdmin) {
       console.log('Un administrateur existe déjà.');

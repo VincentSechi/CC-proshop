@@ -43,7 +43,6 @@ mongoose.connect('mongodb://localhost:27017/proshop', {
     .then(() => console.log('Connexion à MongoDB_proshop réussie'))
     .catch(err => console.error(err));
 
-/* mongoose.connect('mongodb+srv://vincent:azertyuiop@redgi.poqfatm.mongodb.net/proshop?retryWrites=true&w=majority&appName=redgi') */
 
 const UserRegisterController = require('./src/controllers/user/UserRegisterController')
 const UserLoginController = require('./src/controllers/user/UserLoginController');
